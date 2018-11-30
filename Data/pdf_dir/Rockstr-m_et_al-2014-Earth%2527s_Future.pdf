@@ -1,0 +1,452 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<!--Header-default SM-->
+<html>
+    <head>
+        <title>Spiral: Invalid Identifier</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="Generator" content="DSpace 4.2" />
+        
+        
+        
+                                            <meta charset="utf-8">
+                                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+        
+        
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	    <link rel="stylesheet" href="/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" /> 
+        
+        									<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                                            <!-- Custom Fonts -->
+                                            <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+                                            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+                                            <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+                                            <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+                                            <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+                                        
+                                            <!-- Theme CSS -->
+                                            <link href="/css/agency.min.css" rel="stylesheet">
+                                             
+
+
+                                        
+                                            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                            <!--[if lt IE 9]>
+                                                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                                                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                                            <![endif]-->
+        
+
+        
+        
+
+        <link rel="search" type="application/opensearchdescription+xml" href="/open-search/description.xml" title="Spiral"/>
+
+        
+	<script type='text/javascript' src="/static/js/jquery/jquery-1.10.2.min.js"></script>
+	<script type='text/javascript' src='/static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+	<script type='text/javascript' src='/static/js/bootstrap/bootstrap.min.js'></script>
+	<script type='text/javascript' src='/static/js/holder.js'></script>
+	<script type="text/javascript" src="/utils.js"></script>
+	<script type="text/javascript" src="/static/js/choice-support.js"> </script>
+	<script type="text/javascript" src="/static/js/custom.js"></script>
+	<script type='text/javascript' src='/static/js/googleJS.js'></script>
+    
+    
+
+ 
+                                                    
+                                                    
+
+<c:set var="dspace.layout.head.last" scope="request"> <script type="text/javascript">
+	var jQ = jQuery.noConflict();
+	jQ(document).ready(function() {
+		jQ( "#spellCheckQuery").click(function(){
+			jQ("#query").val(jQ(this).attr('data-spell'));
+			jQ("#main-query-submit").click();
+		});
+		jQ( ".filterquery" ).each(function(){
+			jQ(this).autocomplete({
+				source: function( request, response ) {
+					jQ.ajax({
+						url: "/json/discovery/autocomplete?query=",
+						dataType: "json",
+						cache: false,
+						data: {
+				
+							auto_idx: jQ(".filtername").val(),
+							auto_query: request.term,
+							auto_sort: 'count',
+							auto_type: jQ(".filtertype").val(),
+							location: ''
+						},
+						 success:  function( data ) {
+                                                        var array =  jQ.map( data.autocomplete, function( item ) {
+                                                                return { label: item, name: item.replace(new RegExp("<strong>", 'g'), "").replace(new RegExp("</strong>","g"),"") };
+                                                        });
+
+							response(array);
+						  }});
+						},
+                                        open: function(event, ui) {
+                                            var autocomplete = jQ(".ui-autocomplete");
+                                            var oldTop = autocomplete.offset().top;
+                                            var newTop = oldTop +10;
+                                            autocomplete.css("top", newTop);
+                                        },
+					focus: function(event, ui) {
+     					     jQ(this).val(ui.item.name);
+					     return false;
+					},
+					select: function(event, ui) {
+					     jQ(this).val(ui.item.name);
+					     return false;
+					},
+					minLength: 2
+				}).data("ui-autocomplete")._renderItem = function(ul, item) {
+					return jQ( "<li></li>" )
+					    .data( "ui-autocomplete-item", item )
+					    .append( "<a>" + item.label + "</a>" )
+					    .appendTo( ul );
+				};
+			});
+   			 jQ(".download").tooltip({
+        			trigger: 'hover',
+        			title : '12 month downloads'
+     			});
+
+   			 jQ(".badge").tooltip({
+        			trigger: 'hover',
+        			title : 'Items'
+     			});
+	});
+</script>		
+</c:set>
+
+    
+    
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-25040640-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+    </head>
+
+    
+    
+    <body id="page-top" class="index">
+<a class="sr-only" href="#content">Skip navigation</a>
+
+
+
+
+
+
+<header class="navbar navbar-inverse navbar-fixed-top page-scroll">    
+    
+            <div class="container page-scroll">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//Andrew - set query value onClick of submit button
+function setQueryValue(){  
+   var queryValue = document.getElementById('filterquery').value;
+   query.value = queryValue; 
+   return true;
+}
+</script>
+
+
+			<!-- Navigation -->
+          
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                
+                <a href="#page-top"><img src="/img/library-logo.png" alt="Imperial College London" class="ICLogo"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.jsp">Home</a>
+                    </li>
+                    <li>
+                    <a class="page-scroll" href="/index.jsp#portfolio">Browse</a>
+                    
+                    
+                    </li>
+                    
+                    
+                    
+                  <li class= ""><a href="/feedback">
+                  Help / Contact
+                </a></li>
+                 <li class="xdropdown">
+        
+
+        
+        
+          <li><a href="/mydspace">
+            My Spiral
+            </a></li>
+
+          
+        </ul>
+      </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+<span class="hide">
+<!--navbar_default.jsp -->
+<!--<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+  <a class="navbar-brand" href="http://imperial.ac.uk/"><img class="logo" alt="Imperial College London" src="/image/imperial-logo-only.png" /></a> </div> -->
+<nav class="hide collapse navbar-collapse bs-navbar-collapse" role="navigation">
+  <ul class="nav navbar-nav">
+    <li class=""><a href="/">
+      Home
+      </a></li>
+      
+    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Browse
+      <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="/community-list">
+          Communities<br/>&amp;&nbsp;Collections
+          </a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">Browse Items by:></li>
+        
+        
+        <li><a href="/browse?type=dateissued">
+          Publication Date
+          </a></li>
+        
+        <li><a href="/browse?type=author">
+          Author
+          </a></li>
+        
+        <li><a href="/browse?type=title">
+          Title
+          </a></li>
+        
+        <li><a href="/browse?type=coursename">
+          Course
+          </a></li>
+        
+        
+        <noscript>You appear to have a browser that does not support javaScript or javaScript has been disabled.  Dropdown menus will not work however the links contained in the dropdowns can be accessed in the <a href="/index.jsp#browse">'Browse the Spiral communities and collections' of the home page.</a> </noscript>
+      </ul>
+    </li>
+
+        <li class="hide"><a href="http://www3.imperial.ac.uk/scholarly-communication/spiral-digital-repository"> About </a></li> 
+        <li class="hide"><a href="http://www3.imperial.ac.uk/library/getintouch/yourlibrarian"> Help </a></li>  
+
+   <li class= ""><a href="/feedback">
+        Help / Contact
+      </a></li>
+    
+  </ul>
+  
+    <ul class="nav navbar-nav navbar-right">
+    
+    HELLO 
+      <li class="dropdown">
+        
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Sign on to:
+        <b class="caret"></b></a>
+        
+        
+          <li><a href="/mydspace">
+            My Spiral
+            </a></li>
+<!--          <li><a href="/subscribe">
+            Receive email<br/>updates
+            </a></li>
+          <li><a href="/profile">
+            Edit Profile
+            </a></li>
+-->
+          
+       
+      </li>
+    </ul>
+
+</nav>
+navbar-default.jsp
+</span>
+ 
+            </div>
+
+</header>
+
+
+
+<main id="content" role="main">
+	
+
+
+        
+<div class="container">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>Invalid Identifier</h1>
+	<p>The identifier 10044/1/40663/2/Rockstr-m_et_al-2014-Earth%27s_Future.pdf does not correspond to a valid Bitstream in Spiral.  This may be because of one of the following reasons:</p>
+
+    <ul>
+        <li>The URL of the current page is incorrect - if you followed a link from outside of Spiral it may be mistyped or corrupt.</li>
+        <li>You entered an invalid ID into a form - please try again.</li>
+    </ul>
+    <p>If you're having problems, or you expected the ID to work, feel free to contact the site administrators.</p>
+
+    
+
+  
+  
+  
+
+
+
+<center>
+  <p><a href="/feedback">Leave a message for the Spiral administrators.</a></p>
+</center>
+
+
+    <p align="center">
+        <a href="/">Go to the Spiral home page</a>
+    </p>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+</div>
+</main>
+            
+             <footer class="navbar navbar-inverse navbar-bottom">
+             <!-- <div id="designedby" class="container text-muted">
+             Theme by <a href="http://www.cineca.it">
+             <img
+                                    src="/image/logo-cineca-small.png"
+                                    alt="Logo CINECA" /></a>
+			<div id="footer_feedback" class="pull-right">                                    
+                                <p class="text-muted"><a target="_blank" href="http://www.dspace.org/">Spiral Software</a> Copyright&nbsp;&copy;&nbsp;2002-2013&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
+                                <a target="_blank" href="/feedback">Feedback</a>
+                                <a href="/htmlmap"></a></p>
+                                </div>
+			</div>-->
+    </footer>
+    </body>
+</html>

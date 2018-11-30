@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html>
+<head>
+<title>Academic Journal:: Backend - Users</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/login.css" />
+</head>
+<body>
+<script type="0497312615e1297e6288429f-text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9666312-1']);
+  _gaq.push(['_setDomainName', 'academicjournals.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div id="doc3" class="yui3-t7">
+<div id="hd">
+<div id="yui3-g">
+<div id="yui3-u">
+<h1>&nbsp;
+<div id="title-text"></div>
+</h1>
+</div>
+</div>
+</div>
+<div id="bd" style="width: 500px; margin:0 auto;">
+<br />
+<span style="color:red">
+</span>
+<div class="login">
+<div class="um_box_up"></div>
+<div class="um_box_mid">
+<div class="um_box_mid_content">
+<div class="um_box_mid_content_top">
+<div style="clear:both"></div>
+</div>
+<div class="umhr"></div>
+<div class="um_box_mid_content_mid" id="login">
+<div class="um_box_mid_content_mid_left">
+<form action="/backend" id="UserLoginForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div> <div>
+<div class="umstyle3">Email / Username</div>
+<div class="umstyle4"><input name="data[User][email]" class="umstyle5" maxlength="100" type="email" id="UserEmail" /></div>
+<div style="clear:both"></div>
+</div>
+<div>
+<div class="umstyle3">Password</div>
+<div class="umstyle4"><input name="data[User][password]" class="umstyle5" type="password" id="UserPassword" /></div>
+<div style="clear:both"></div>
+</div>
+<div>
+</div>
+<div>
+<div class="umstyle3"></div>
+<div class="umstyle4"><div class="submit"><input type="submit" value="Sign In" /></div></div>
+<div style="clear:both"></div>
+</div>
+</form> <div align="left"><a href="/forgotPassword" class="style30">Forgot Password?</a></div>
+</div>
+<div class="um_box_mid_content_mid_right" align="right">
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+</div>
+<div class="um_box_down"></div>
+</div>
+<script type="0497312615e1297e6288429f-text/javascript">
+document.getElementById("UserEmail").focus();
+</script> <br />
+</div>
+<div id="ft">
+<div id="footer">
+&copy; 2018 Academic Journals
+</div>
+</div>
+</div>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="0497312615e1297e6288429f-" defer=""></script></body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.colorado.edu/geography/profiles/express/themes/expressbase/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.colorado.edu/geography/profiles/express/themes/expressbase/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.colorado.edu/geography/profiles/express/themes/expressbase/apple-icon-57x57.png" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<link href="//fast.fonts.net/cssapi/86696b99-fb1a-4964-9676-9233fb4fca8f.css" rel="stylesheet" type="text/css" />
+<link href="https://www.colorado.edu/p10d996698e3/feed/60/all/rss.xml" rel="alternate" />
+<link rel="shortcut icon" href="https://www.colorado.edu/geography/profiles/express/themes/cutradition/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.colorado.edu/geography/profiles/express/themes/expressbase/apple-icon-144x144.png" />
+<meta property="og:image:height" content="331" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image" content="https://www.colorado.edu/geography/sites/default/files/styles/medium/public/page/custom-404-message.jpg?itok=xtdE6Nnd" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.colorado.edu/geography/" />
+<link rel="shortlink" href="https://www.colorado.edu/geography/" />
+<meta property="og:site_name" content="Geography" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.colorado.edu/geography/" />
+<meta property="og:title" content="Geography" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://www.colorado.edu/geography/" />
+<meta name="twitter:title" content="Geography" />
+  <title>404 - Page Not found | Geography | University of Colorado Boulder</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+  <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="https://www.colorado.edu/geography/sites/default/files/css/css_iwcV-57Wj61U_p3sQJ52M0gwXCAeWLI8IU8Ia2MtoYM.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://www.colorado.edu/geography/sites/default/files/css/css_Jdtt3Tl52dxH8dxYG3LDxk_0yM3d6kCB5xso7BSBjjU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://www.colorado.edu/geography/sites/default/files/css/css_DTMUAxqOBchDlwmt7xR-daU7ZbOBsgM_evFY8zdxqkA.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://www.colorado.edu/geography/sites/default/files/css/css_QwzaJvk7oJzmo3KAhiVyX4QdGnA8N1W8Kl9tmiZEE3E.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://www.colorado.edu/geography/sites/default/files/css/css_lRy5q5_Zs5tclV5cb-dA4ueeKeju6Iq-_ZUpXJiIz2w.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://www.colorado.edu/geography/sites/default/files/css/css_MYE84Mr8lgNIZGvDxO9Y0vKH_DQvJJuckP9Ygp_pvYo.css" media="print" />
+  <script type="text/javascript" src="https://www.colorado.edu/geography/profiles/express/libraries/modernizr/modernizr.min.js?pi3c7d"></script>
+<script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_OZNF4qYMNJNBu3SmFk-qGRaJ6GUa_41jc9ZG1TfaJgI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.migrateMute=true;jQuery.migrateTrace=false;
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_zMDEBb8jyUqTDrOvzhSlxfH3fnM7ImhfF2JpM2LYjj8.js"></script>
+<script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_DzD04PZATtGOFjfR8HJgfcaO3-pPZpWFXEvuMvQz2gA.js"></script>
+<script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_XJpUucwibEpugm0meyT11uE4MCgGkK18BnXP0THAYhs.js"></script>
+<script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_tKZKHjDWg7O_eKnve0J-OooNJuIaErM-s9a6a8M56ts.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-25752450-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("set", "dimension1", "2222");ga("set", "dimension2", "404 - Page Not found ");ga("set", "dimension3", "Basic page");ga("set", "dimension4", "Fri, 08\/11\/2017 - 16:01");ga("set", "page", "/geography/404.html?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);ga("send", "pageview");ga('create', 'UA-97642814-1', 'auto', {'name':'customTracker0'});  ga('customTracker0.send', 'pageview');ga('create', 'UA-105731679-1', 'auto', {'name':'customTracker1'});  ga('customTracker1.send', 'pageview');
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_f1ktvESGhsmF90brCt-jJAS_dPDcjqKl64LyCvci-XY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/geography\/","pathPrefix":"","ajaxPageState":{"theme":"cutradition","theme_token":"dOtvDQznxaMWgptkJmfC_VfbkEfBaFfwqWpVlC7cWxc","js":{"profiles\/express\/modules\/custom\/backstretch\/bs.js":1,"profiles\/express\/modules\/features\/cu_search\/js\/cu-search.js":1,"profiles\/express\/themes\/expressbase\/js\/track-focus.js":1,"0":1,"profiles\/express\/modules\/features\/cu_quicktab_styles\/js\/cu_quicktab_styles.js":1,"profiles\/express\/modules\/custom\/cu_back_to_top\/cu_back_to_top.js":1,"profiles\/express\/libraries\/modernizr\/modernizr.min.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/jquery\/1.9\/jquery.min.js":1,"1":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1\/jquery-migrate.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/express\/libraries\/fitvids\/jquery.fitvids.js":1,"profiles\/express\/libraries\/match-height\/jquery.matchHeight-min.js":1,"profiles\/express\/libraries\/waypoints\/waypoint.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/express\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"profiles\/express\/modules\/features\/cu_colorbox\/js\/cu-colorbox.js":1,"profiles\/express\/modules\/custom\/cu_expandable\/js\/expandable.plugin.js":1,"profiles\/express\/modules\/custom\/cu_expandable\/js\/cu-expandable.js":1,"profiles\/express\/modules\/custom\/cu_share\/js\/cu_share.js":1,"sites\/all\/modules\/express_collections_bundle\/js\/express-collections-bundle.js":1,"profiles\/express\/modules\/custom\/express_layout\/js\/express-layout.js":1,"profiles\/express\/modules\/contrib\/fitvids\/fitvids.js":1,"profiles\/express\/modules\/contrib\/google_cse\/google_cse.js":1,"profiles\/express\/modules\/custom\/site_navigation_menus\/js\/site-navigation-menus.js":1,"profiles\/express\/libraries\/colorbox\/jquery.colorbox-min.js":1,"profiles\/express\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"profiles\/express\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.js":1,"profiles\/express\/modules\/contrib\/context_accordion\/context_accordion.js":1,"profiles\/express\/modules\/features\/cu_article\/modules\/cu_article_slider\/js\/cu-article-slider.js":1,"profiles\/express\/modules\/features\/cu_slider\/js\/cu-slider.js":1,"profiles\/express\/libraries\/flickity\/js\/flickity.pkgd.min.js":1,"profiles\/express\/modules\/contrib\/files_undo_remove\/files_undo_remove.js":1,"profiles\/express\/libraries\/backstretch\/jquery.backstretch.js":1,"profiles\/express\/modules\/contrib\/rave_alerts\/js\/rave_alerts.js":1,"profiles\/express\/modules\/features\/cu_block_section\/js\/cu-block-section.js":1,"profiles\/express\/modules\/features\/cu_block_section\/js\/parallaxie.js":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/js\/cu_shortcodes.js":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/js\/counter.js":1,"profiles\/express\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"profiles\/express\/themes\/expressbase\/js\/expressbase.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"profiles\/express\/modules\/features\/cu_article\/modules\/cu_article_slider\/css\/cu-article-slider.css":1,"sites\/all\/modules\/cu_campus_news_bundle\/cu_campus_news\/css\/cu-campus-news.css":1,"sites\/all\/modules\/cu_content_sequence_bundle\/cu_content_sequence\/css\/cu-content-sequence.css":1,"profiles\/express\/modules\/custom\/cu_dashboard_seo\/css\/cu-dashboard-seo.css":1,"profiles\/express\/modules\/custom\/cu_expandable\/css\/cu-expandable.css":1,"profiles\/express\/modules\/custom\/cu_inactive_users\/css\/cu-inactive-users.css":1,"profiles\/express\/modules\/features\/cu_article\/cu_related_articles\/css\/cu-related-articles.css":1,"profiles\/express\/modules\/custom\/cu_rss\/css\/cu-rss.css":1,"profiles\/express\/modules\/custom\/cu_share\/css\/cu-share.css":1,"profiles\/express\/modules\/features\/cu_wysiwyg\/cu-wysiwyg.css":1,"profiles\/express\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/express\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/express\/modules\/custom\/express_add_content\/css\/express-add-content.css":1,"profiles\/express\/modules\/custom\/express_block_designer\/css\/express-block-designer.css":1,"profiles\/express\/modules\/custom\/express_block_designer\/modules\/express_block_designer_menu\/css\/exbd-menu.css":1,"sites\/all\/modules\/express_collections_bundle\/css\/express-collections-bundle.css":1,"profiles\/express\/modules\/custom\/express_layout\/css\/express-layout-admin.css":1,"sites\/all\/modules\/express_localist_bundle\/css\/express-localist-bundle.css":1,"sites\/all\/modules\/express_localist_bundle\/css\/express-localist-bundle-theme.css":1,"modules\/field\/theme\/field.css":1,"profiles\/express\/modules\/contrib\/fitvids\/fitvids.css":1,"profiles\/express\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"profiles\/express\/modules\/contrib\/rave_alerts\/css\/rave_alerts.css":1,"profiles\/express\/modules\/custom\/site_navigation_menus\/css\/site-navigation-menus.css":1,"modules\/user\/user.css":1,"profiles\/express\/modules\/contrib\/video_filter\/video_filter.css":1,"profiles\/express\/modules\/contrib\/views\/css\/views.css":1,"profiles\/express\/modules\/custom\/cu_users\/css\/cu-users.css":1,"profiles\/express\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.css":1,"profiles\/express\/modules\/contrib\/context_accordion\/context_accordion.css":1,"profiles\/express\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/express\/libraries\/fontawesome\/css\/font-awesome.min.css":1,"profiles\/express\/libraries\/flickity\/css\/flickity.css":1,"profiles\/express\/modules\/features\/cu_slider\/css\/cu_slider.css":1,"profiles\/express\/modules\/contrib\/files_undo_remove\/files_undo_remove.css":1,"profiles\/express\/modules\/custom\/backstretch\/backstretch.css":1,"profiles\/express\/modules\/custom\/cu_block_row\/css\/cu-block-row.css":1,"profiles\/express\/modules\/features\/cu_block_section\/css\/cu-block-section.css":1,"profiles\/express\/modules\/features\/cu_facebook_activity\/cu_facebook_activity.css":1,"profiles\/express\/modules\/features\/cu_feature_callout\/css\/cu_feature_callout.css":1,"profiles\/express\/modules\/features\/cu_feature_callout\/css\/feature-callout-block-designer.css":1,"profiles\/express\/modules\/custom\/cu_give_buttons\/styles\/give-button.css":1,"profiles\/express\/modules\/features\/cu_hero_unit\/css\/cu_hero_unit.css":1,"profiles\/express\/modules\/custom\/cu_menu_icon\/cu_menu_icon.css":1,"sites\/all\/modules\/cu_publications_bundle\/cu_publication\/css\/cu-publication.css":1,"profiles\/express\/modules\/features\/cu_quicktab_styles\/css\/cu_quicktab_styles.css":1,"profiles\/express\/modules\/custom\/cu_rss_block\/css\/cu-rss-block.css":1,"profiles\/express\/modules\/features\/cu_search\/css\/cu-search.css":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/css\/cu_shortcodes.css":1,"profiles\/express\/modules\/custom\/cu_shortcodes\/css\/cu-shortcodes-columns.css":1,"profiles\/express\/modules\/custom\/cu_site_info\/site_info.css":1,"profiles\/express\/modules\/features\/cu_social_links\/css\/social_links.css":1,"profiles\/express\/modules\/features\/cu_twitter_feed\/cu_twitter_feed.css":1,"profiles\/express\/modules\/custom\/cu_video_reveal\/css\/cu-video-reveal.css":1,"profiles\/express\/modules\/custom\/express_layout\/css\/express-layout.css":1,"profiles\/express\/modules\/custom\/express_settings\/css\/express-settings.css":1,"profiles\/express\/modules\/features\/files\/css\/files.css":1,"profiles\/express\/modules\/custom\/profile_module_manager\/css\/profile-module-manager.css":1,"profiles\/express\/modules\/features\/cu_article\/css\/cu-article.css":1,"profiles\/express\/modules\/features\/cu_article\/css\/cu-article-grid.css":1,"profiles\/express\/modules\/features\/cu_article\/css\/owl.carousel.css":1,"profiles\/express\/modules\/features\/cu_faq\/css\/cu_faq.css":1,"profiles\/express\/modules\/features\/cu_page\/cu-page.css":1,"profiles\/express\/modules\/custom\/express_theme_picker\/express_theme_picker.css":1,"profiles\/express\/modules\/features\/people_content_type\/css\/people_content_type.css":1,"profiles\/express\/modules\/features\/photo_gallery\/css\/photo-gallery.css":1,"profiles\/express\/modules\/custom\/cu_back_to_top\/cu_back_to_top.css":1,"profiles\/express\/modules\/custom\/cu_core\/css\/cu-core.css":1,"profiles\/express\/themes\/expressbase\/css\/expressbase-grid.css":1,"profiles\/express\/themes\/expressbase\/css\/styles.css":1,"profiles\/express\/themes\/cutradition\/css\/tradition-styles.css":1,"profiles\/express\/themes\/expressbase\/css\/print.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"320px"},"localist_bypass_urls":["cupresents.org"],"googleCSE":{"cx":"016005321760733004813:snvrwfpdooq","resultsWidth":600,"domain":"www.google.com","showWaterMark":true},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true,"ignore":""},"backstretchURL":"","backstretchMinWidth":0,"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackColorbox":1},"currentPath":"node\/2222","currentPathIsAdmin":false});
+//--><!]]>
+</script>
+      <!--[if lt IE 9]>
+    <script src="/geography/profiles/express/themes/expressbase/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-2222 node-type-page layout-default headings-light page-title-image-background-transparent block-icons-inherit layout-responsive max-width-1200 primary-sidebar-second banner-black layout-wide" >
+      <p id="skip-link">
+      <a href="#main" class="element-invisible element-focusable">Skip to Content</a>
+    </p>
+      <div id="page-wrapper" class="page-wrapper">
+  <div id="page" class="page node-published">
+        <div id="alerts-wide-wrapper" class="section-wrapper">
+      <div id="alerts" class="clearfix">
+          <div class="region region-alerts clearfix">
+    <div id="block-rave-alerts-rave-alerts" class="block block-rave-alerts  block-rave-alerts-rave-alerts">
+  <div class="block-inner-wrapper block-inner clearfix">
+                <div class="content">
+      <div id="rave-alerts" data-remote-url="">
+  </div>
+    </div>
+  </div>
+</div>
+  </div>
+      </div>
+    </div>
+        <div id="search" tabindex="-1">
+      <div class="element-max-width search-wrapper">
+          <div class="cu-search-box cu-search-box-small animated" role="search">
+    <h2 class="element-invisible">Search</h2>
+    <form class="cu-search-form" action="/geography/search" method="get">
+      <div class="search-form-wrapper">
+                <div class="search-fields">
+          <div class="cu-search clearfix">
+            <div class="form-item form-type-textfield form-item-search-keys">
+              <label class="element-invisible" for="edit-search-keys">Enter the terms you wish to search for. </label>
+              <input placeholder="Search this site" type="search" id="edit-search-keys" name="cse" value="" size="15" maxlength="128" class="form-text">
+            </div>
+            <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+      </div>
+    </div>
+    <div id="header-wrapper" class="section-wrapper header-wrapper">
+      <header class="header container-max clearfix" id="header" role="banner">
+        <div id="branding" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <div id="print-header" class="clearfix">
+  <div class="print-site-name">
+    Geography   </div>
+  <div class="print-site-logo">
+    <img src="https://www.colorado.edu/geography/profiles/express/themes/expressbase/images/print-logo.png" alt="University of Colorado Boulder" />  </div>
+</div>
+
+      <a href="/geography/" rel="home" class="header__logo"><img src="https://www.colorado.edu/geography/profiles/express/themes/expressbase/images/cu-logo.svg" alt="Home" class="header__logo-image" id="logo" /></a>
+  
+      <div class="header__name-and-slogan" id="name-and-slogan">
+              <div class="header__site-name" id="site-name">
+          <a href="/geography/" class="header__site-link" rel="home"><span>Geography </span></a>
+        </div>
+      
+              <div class="header__site-slogan" id="site-slogan">University of Colorado <strong>Boulder</strong></div>
+          </div>
+            <div class="mobile-menu-toggle">
+            <button id="toggle" aria-haspopup="true" aria-expanded="false" aria-controls="mobile-menu" aria-label="Navigation"><span class="mobile-menu-text">Menu </span><i class="fa fa-reorder fa-fw"></i></button>
+          </div>
+        </div>
+        <div id="header-content" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 clearfix">
+                      <a href="#search" class="search-toggle"><i class="fa fa-search"></i><span class="element-invisible">Search</span></a>
+                  </div>
+      </header>
+    </div>
+    <div id="navigation-wrapper" class="navigation-wrapper">
+            <div id="secondary-menu-wrapper" class="section-wrapper">
+        <div id="secondary-navigation" class="container-max">
+          <div class="secondary-nav-inner col-lg-12 col-md-12 clearfix">
+              <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
+    <h2 class="element-invisible">Secondary Menu</h2>  <ul class="links inline clearfix"><li class="first"><a href="/geography/resources-faculty" title="" class="first">Faculty Resources</a></li><li class=""><a href="/geography/content/alumni-updates" title="">Alumni Updates</a></li><li class=""><a href="/geography/content/suggestions" title="">Suggestions</a></li><li class=""><a href="https://www.facebook.com/CU-Boulder-Geography-210147706772/" title="Check out our Facebook page!"><i class="fa fa-fw fa-facebook-official"></i> <span class="">Facebook</span></a></li><li class="last"><a href="/geography/donor-support" title="We depend on your contributions. We can&#039;t do it without you!" class="last"><i class="fa fa-fw fa-heart"></i> <span class="">Giving Back</span></a></li>  </ul>  </nav>
+          </div>
+        </div>
+      </div>
+            <div id="main-menu-wrapper" class="section-wrapper">
+        <div id="navigation" class="container-max">
+          <div class="nav-inner col-lg-12 col-md-12 clearfix">
+              <nav role="navigation" tabindex="-1" class="region region-menu">
+        <h2 class="element-invisible">Main menu</h2>  <ul class="links inline clearfix" id="main-menu"><li class="home-link first"><a href="/geography/" class="home-link first"><i class="fa fa-home"></i><span class="element-invisible">Home</span></a></li><li class=""><a href="/geography/news-events/department-news" title="">News &amp; Events</a></li><li class=""><a href="/geography/people/faculty" title="">People</a></li><li class=""><a href="/geography/undergrad-program/undergraduate-major-overview" title="">Undergrad Program</a></li><li class=""><a href="/geography/grad-program/graduate-curriculum" title="">Grad Program</a></li><li class=""><a href="/geography/facilities/guggenheim-computing" title="">Facilities</a></li><li class=""><a href="/geography/research-0">Research</a></li><li class="last"><a href="/geography/why-cu-geography" class="last">Why CU Geography?</a></li>  </ul>
+  </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-navigation-wrapper">
+
+
+      <div id="mobile-navigation">
+        <div id="mobile-search">
+            <div class="cu-search-box cu-search-box-small animated">
+    <h2 class="element-invisible">Search</h2>
+    <form class="cu-search-form" action="/geography/search" method="get">
+      <div class="search-form-wrapper">
+                <div class="search-fields">
+          <div class="cu-search clearfix">
+            <div class="form-item form-type-textfield form-item-search-keys">
+              <label class="element-invisible" for="edit-search-keys-mobile">Enter the terms you wish to search for. </label>
+              <input placeholder="Search this site" type="search" id="edit-search-keys-mobile" name="cse" value="" size="15" maxlength="128" class="form-text">
+            </div>
+            <div class="form-actions form-wrapper" id="edit-actions-mobile"><input type="submit" id="edit-submit-mobile" name="op" value="Search" class="form-submit"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+        </div>
+        <nav id="mobile-menu" role="navigation">
+                  <h2 class="element-invisible">Mobile menu</h2><ul id="main-menu-mobile" class="links clearfix"><li class="menu-584 first"><a href="/geography/">Home</a></li>
+<li class="menu-4430"><a href="/geography/news-events/department-news" title="">News &amp; Events</a></li>
+<li class="menu-3924"><a href="/geography/people/faculty" title="">People</a></li>
+<li class="menu-3266"><a href="/geography/undergrad-program/undergraduate-major-overview" title="">Undergrad Program</a></li>
+<li class="menu-3268"><a href="/geography/grad-program/graduate-curriculum" title="">Grad Program</a></li>
+<li class="menu-3290"><a href="/geography/facilities/guggenheim-computing" title="">Facilities</a></li>
+<li class="menu-3238"><a href="/geography/research-0">Research</a></li>
+<li class="menu-3236 last"><a href="/geography/why-cu-geography">Why CU Geography?</a></li>
+</ul>          <ul id="secondary-menu-mobile" class="links clearfix"><li class="menu-4466 first"><a href="/geography/resources-faculty" title="">Faculty Resources</a></li>
+<li class="menu-4468"><a href="/geography/content/alumni-updates" title="">Alumni Updates</a></li>
+<li class="menu-4470"><a href="/geography/content/suggestions" title="">Suggestions</a></li>
+<li class="menu-3228"><a href="https://www.facebook.com/CU-Boulder-Geography-210147706772/" title="Check out our Facebook page!">Facebook</a></li>
+<li class="menu-2456 last"><a href="/geography/donor-support" title="We depend on your contributions. We can&#039;t do it without you!">Giving Back</a></li>
+</ul>                                                </nav>
+      </div>
+    </div>
+    <div class="express-messages">
+                            </div>
+    <div class="top-content-wrapper"><div class="top-content">
+      
+                    <div id="page-title-wrapper" class="page-title-wrapper section-wrapper ">
+          <a id="main-content"></a>
+          <div class="page-title-inner element-max-width-padding">
+            <h1 id="page-title">404 - Page Not found </h1>
+                      </div>
+        </div>
+        <div class="clear"></div>
+      
+      <div id="content-wrapper" class="section-wrapper content-wrapper">
+        <div id="main" class="clearfix">
+          
+          
+          <div id="main-content-wrapper" class="container-max">
+
+            <div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" role="main">
+                <div class="region region-content clearfix">
+          <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h2><img alt="404 - Page Not Found. Click to send email to jeff.nicholson@colorado.edu for support" class="image-large" src="https://www.colorado.edu/geography/sites/default/files/styles/large/public/page/custom-404-message_0.jpg?itok=8NKdiOyr" /></h2>
+</div></div></div>  </div>
+                          </div>
+
+
+            
+                      </div>
+        </div>
+      </div>
+
+      
+      
+          </div></div>
+    
+
+    <div id="footer-section" class="footer-section">
+      
+            <div id="site-info-wrapper" class="section-wrapper site-info-wrapper">
+        <div id="site-info" class="container-max">
+          
+  <footer id="site-footer" class="region region-site-info footer-2col">
+          <div id="site-footer-content" class="col-lg-8 col-md-8">
+        <div id="block-cu-site-info-site-info" class="block block-cu-site-info exbd-icon-position-default exbd-heading-align-default exbd-style-default exbd-font-scale-title-default exbd-font-scale-content-default exbd-block has-block-title block-cu-site-info-site-info">
+  <div class="block-inner-wrapper block-inner clearfix">
+              <div class="exbd-block-title">
+        <h2 class="block-title"><a href="/geography/">Geography </a></h2>
+      </div>
+            <div class="content">
+      <p></p><div class="content-column column-one-quarter"> <br />GUGG 110, 260 UCB <br />Boulder, CO 80309-0260<br />303.492.2631 (phone)<br />303.492.7501 (fax)<br /></div><div class="content-column column-one-quarter"><br /><a href="https://www.colorado.edu/geography/donor-support" class="button cu-give-button button-small cu-give-button-gold"><i class="icon-cu"></i> Contribute</a><br /><a href="https://www.facebook.com/CU-Boulder-Geography-210147706772/" class="button button-small button-gold"><i class="fa fa-facebook-official"></i> Facebook Page</a><br /><a href="https://www.colorado.edu/geography/resources-faculty" class="button button-small button-gold"><i class="fa fa-flag-checkered"></i> Faculty Resources</a><br /></div><div class="content-column column-one-quarter"><br /><a href="https://www.colorado.edu/geography/contact-us" class="button button-small button-blue"><i class="fa fa-map-marker"></i> Contact Us</a><br /><a href="https://www.colorado.edu/geography/content/suggestions" class="button button-small button-gold"><i class="fa fa-ambulance"></i> Suggestion Box</a><br /><a href="https://www.colorado.edu/geography/content/alumni-updates" class="button button-small button-gold"><i class="fa fa-pencil"></i> Alumni Updates</a><br /></div><div class="content-column column-one-quarter last"><br /><a href="https://www.colorado.edu/geography/news-events/department-job-postings" class="button button-small button-gold"><i class="fa smile-o"></i> Job Openings</a><br /><a href="https://www.colorado.edu/geography/feed/60/all/rss.xml" class="button button-small button-gold"><i class="fa fa-rss"></i> RSS Feed</a><br /></div><div class="clear"></div>
+    </div>
+  </div>
+</div>
+      </div>
+            <div id="cu-footer" class="col-lg-4 col-md-4">
+        <p><a href="//www.colorado.edu"><img src="https://www.colorado.edu/geography/profiles/express/themes/expressbase/images/beboulder/be-boulder-white.png" alt="University of Colorado Boulder" class="beboulder"/></a></p>
+                <p><strong><a href="http://www.colorado.edu">University of Colorado Boulder</a></strong><br />&copy; Regents of the University of Colorado<br />
+        <span class="required-links"><a href="http://www.colorado.edu/about/privacy-statement">Privacy</a> &bull; <a href="http://www.colorado.edu/about/legal-trademarks">Legal &amp; Trademarks</a> &bull; <a href="http://www.colorado.edu/map">Campus Map</a></span></p>
+    </div>
+  </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="cu_back_to_top"><a href="#page" title="Back to Top">Return to the top of the page</a></div><script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_-eh9yRRRVz-zDhqiHLD2p4ID-0CQ1ERS9nNiq2iizkU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(document).ready(function () { if (!Modernizr.svgasimg) {
+  jQuery("img#logo").attr("src", "https://www.colorado.edu/geography/profiles/express/themes/cutradition/logo.png");} });
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.colorado.edu/geography/sites/default/files/js/js_zIS_x1xbqFltcwF3fjcXxcv4isWWerwknsKFTlvI3KE.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"77bdf6c909","applicationID":"166418094","transactionName":"ZARbNksCWkRYUE1eW11OeAFNCltZFl1WU1FsEVgFXDxCXlxE","queueTime":0,"applicationTime":278,"atts":"SENYQAMYSUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
