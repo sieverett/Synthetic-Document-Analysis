@@ -1,0 +1,9 @@
+Model_Vec,class,f1_score,precision,recall,support,time_secs
+"RF, Count Vectors:",    0,1.0,1.0,1.0,1558,0.6859447039969382
+"RF, Count Vectors:",    1,1.0,1.0,1.0,1505,0.6859447039969382
+"RF, WordLevel TF-IDF: ",    0,1.0,1.0,1.0,1558,0.6559662200015737
+"RF, WordLevel TF-IDF: ",    1,1.0,1.0,1.0,1505,0.6559662200015737
+"RF, N-Gram Vectors: ",    0,1.0,1.0,1.0,1559,14.408003614000336
+"RF, N-Gram Vectors: ",    1,1.0,1.0,1.0,1504,14.408003614000336
+"RF, CharLevel Vectors: ",    0,1.0,1.0,1.0,1563,15.250707564999175
+"RF, CharLevel Vectors: ",    1,1.0,1.0,1.0,1500,15.250707564999175
