@@ -134,7 +134,8 @@ def clean_up(text):  # clean up your text and generate list of words for each do
 
 def preprocess_spacy(data):
     '''
-    Input: pandas dataframe with 'texts' column labeled
+    Args
+        data: pandas dataframe with 'texts' column labeled
     Returns: a list of processed texts
     '''
     datalist = data.texts.apply(lambda x:" ".join(clean_up(x)))
