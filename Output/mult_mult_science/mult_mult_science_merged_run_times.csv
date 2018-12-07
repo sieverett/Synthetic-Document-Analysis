@@ -1,9 +1,0 @@
-,total_test_time_secs
-count_vectorization,30.286264367983676
-tfidf_vectorization,33.8159794670064
-NB_mult_mult_science,3.507623285986483
-KNN_mult_mult_science,3.363837376993615
-SVM_mult_mult_science,101.07471405999968
-SVC_exp.2.grid_mult_mult_science,33.25889575702604
-Logistic_Regression_mult_mult_science,21.31876791396644
-Random_Forest_mult_mult_science,60.949647722009104

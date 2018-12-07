@@ -1,0 +1,11 @@
+Model_Vec,class,f1_score,precision,recall,support,time_secs
+"KNN, Count Vectors:",    0,0.95,0.91,1.0,1082,0.17481842300185235
+"KNN, Count Vectors:",    1,0.39,1.0,0.24,141,0.17481842300185235
+"KNN, Count Vectors Char: ",    0,0.96,0.94,0.97,1082,0.2705797579983482
+"KNN, Count Vectors Char: ",    1,0.61,0.7,0.54,141,0.2705797579983482
+"KNN, WordLevel TF-IDF: ",    0,0.92,0.88,0.96,1082,0.11258336500031874
+"KNN, WordLevel TF-IDF: ",    1,0.04,0.09,0.03,141,0.11258336500031874
+"KNN, N-Gram Vectors: ",    0,0.94,0.89,1.0,1082,0.10305256599895074
+"KNN, N-Gram Vectors: ",    1,0.01,0.5,0.01,141,0.10305256599895074
+"KNN, CharLevel Vectors: ",    0,0.94,0.89,1.0,1082,0.10093001199857099
+"KNN, CharLevel Vectors: ",    1,0.01,0.5,0.01,141,0.10093001199857099
