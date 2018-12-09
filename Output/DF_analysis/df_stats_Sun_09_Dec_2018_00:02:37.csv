@@ -1,0 +1,3 @@
+,total_docs,dups,zero_vals,vocab_raw,vocab_proc,min_doc_len,max_doc_len,mean_len,std
+climate,1,0,0,198,66,626,626,626,0
+science,5733,0,0,42109,29904,109,2586,897,292

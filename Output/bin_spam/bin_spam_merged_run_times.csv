@@ -1,9 +1,0 @@
-,total_test_time_secs
-count_vectorization,0.7708812199998647
-tfidf_vectorization,0.6484078310022596
-NB_bin_spam,0.1797522660017421
-KNN_bin_spam,0.9536705419995997
-SVM_bin_spam,1.9375588040020375
-SVC_exp.2.grid_bin_spam,1.3350764450005954
-Logistic_Regression_bin_spam,0.5255416139989393
-Random_Forest_bin_spam,6.44768754100005

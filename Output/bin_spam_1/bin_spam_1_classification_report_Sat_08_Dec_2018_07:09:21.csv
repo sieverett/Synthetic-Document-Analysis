@@ -1,0 +1,3 @@
+Model_Vec,class,f1_score,precision,recall,support,time_secs
+RCNN,    0,0.98,0.99,0.97,1080,37.08029320700007
+RCNN,    1,0.86,0.82,0.91,143,37.08029320700007

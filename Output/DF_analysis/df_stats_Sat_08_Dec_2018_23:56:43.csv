@@ -1,0 +1,9 @@
+,total_docs,dups,zero_vals,vocab_raw,vocab_proc,min_doc_len,max_doc_len,mean_len,std
+climate,1,0,0,198,66,626,626,626,0
+spam,4889,25,1,8633,5828,0,356,34,27
+newsgroups,10612,0,0,91637,51235,74,9891,731,841
+reuters,9112,8,0,30103,21461,59,5532,505,496
+bbc,2112,1,0,29342,21603,283,8814,1250,665
+science,5733,0,0,42109,29904,109,2586,897,292
+climate_science_merged,2,0,0,304,139,626,743,684,58
+climate_bbc_merged,2,0,0,339,152,626,890,758,132

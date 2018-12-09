@@ -1,0 +1,26 @@
+Model_Vec,class,f1_score,precision,recall,support,time_secs
+"SVM, Count Vectors:",    0,0.79,0.65,1.0,120,5.444405242000357
+"SVM, Count Vectors:",    1,0.22,0.92,0.13,94,5.444405242000357
+"SVM, Count Vectors:",    2,0.77,1.0,0.62,103,5.444405242000357
+"SVM, Count Vectors:",    3,0.68,0.52,0.99,119,5.444405242000357
+"SVM, Count Vectors:",    4,0.52,0.89,0.37,93,5.444405242000357
+"SVM, Count Vectors Char: ",    0,0.38,0.23,1.0,120,0.45479302600142546
+"SVM, Count Vectors Char: ",    1,0.04,1.0,0.02,94,0.45479302600142546
+"SVM, Count Vectors Char: ",    2,0.07,1.0,0.04,103,0.45479302600142546
+"SVM, Count Vectors Char: ",    3,0.07,1.0,0.03,119,0.45479302600142546
+"SVM, Count Vectors Char: ",    4,0.08,1.0,0.04,93,0.45479302600142546
+"SVM, WordLevel TF-IDF: ",    0,0.52,0.35,1.0,120,5.971607783998479
+"SVM, WordLevel TF-IDF: ",    1,0.0,0.0,0.0,94,5.971607783998479
+"SVM, WordLevel TF-IDF: ",    2,0.0,0.0,0.0,103,5.971607783998479
+"SVM, WordLevel TF-IDF: ",    3,0.76,0.62,0.99,119,5.971607783998479
+"SVM, WordLevel TF-IDF: ",    4,0.0,0.0,0.0,93,5.971607783998479
+"SVM, N-Gram Vectors: ",    0,0.44,0.28,1.0,120,10.44985164100035
+"SVM, N-Gram Vectors: ",    1,0.0,0.0,0.0,94,10.44985164100035
+"SVM, N-Gram Vectors: ",    2,0.0,0.0,0.0,103,10.44985164100035
+"SVM, N-Gram Vectors: ",    3,0.92,1.0,0.86,119,10.44985164100035
+"SVM, N-Gram Vectors: ",    4,0.0,0.0,0.0,93,10.44985164100035
+"SVM, CharLevel Vectors: ",    0,0.44,0.28,1.0,120,10.448426368000582
+"SVM, CharLevel Vectors: ",    1,0.0,0.0,0.0,94,10.448426368000582
+"SVM, CharLevel Vectors: ",    2,0.0,0.0,0.0,103,10.448426368000582
+"SVM, CharLevel Vectors: ",    3,0.92,1.0,0.86,119,10.448426368000582
+"SVM, CharLevel Vectors: ",    4,0.0,0.0,0.0,93,10.448426368000582

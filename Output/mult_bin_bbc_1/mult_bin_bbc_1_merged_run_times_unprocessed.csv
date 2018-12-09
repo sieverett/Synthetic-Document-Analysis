@@ -1,0 +1,9 @@
+,total_test_time_secs
+count_vectorization,11.793847637998624
+tfidf_vectorization,10.962169553000422
+NB_mult_bin_bbc_1,0.32387364500027616
+KNN_mult_bin_bbc_1,0.540581093999208
+SVM_mult_bin_bbc_1,9.274837775001288
+Logistic_Regression_mult_bin_bbc_1,0.7533687289997033
+Random_Forest_mult_bin_bbc_1,3.085479952998867
+SVC_ex.2.grid_mult_bin_bbc_1,245.8424457029996

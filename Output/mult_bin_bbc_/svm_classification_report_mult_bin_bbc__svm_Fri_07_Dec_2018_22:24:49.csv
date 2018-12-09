@@ -1,0 +1,11 @@
+Model_Vec,class,f1_score,precision,recall,support,time_secs
+"SVM, Count Vectors:",    0,0.91,0.83,1.0,438,2.2303536489998805
+"SVM, Count Vectors:",    1,0.02,1.0,0.01,91,2.2303536489998805
+"SVM, Count Vectors Char: ",    0,0.91,0.83,1.0,438,0.5620733329997165
+"SVM, Count Vectors Char: ",    1,0.0,0.0,0.0,91,0.5620733329997165
+"SVM, WordLevel TF-IDF: ",    0,0.91,0.83,1.0,438,2.460465436999584
+"SVM, WordLevel TF-IDF: ",    1,0.0,0.0,0.0,91,2.460465436999584
+"SVM, N-Gram Vectors: ",    0,0.91,0.83,1.0,438,5.982087545000468
+"SVM, N-Gram Vectors: ",    1,0.0,0.0,0.0,91,5.982087545000468
+"SVM, CharLevel Vectors: ",    0,0.91,0.83,1.0,438,5.986246393000329
+"SVM, CharLevel Vectors: ",    1,0.0,0.0,0.0,91,5.986246393000329
