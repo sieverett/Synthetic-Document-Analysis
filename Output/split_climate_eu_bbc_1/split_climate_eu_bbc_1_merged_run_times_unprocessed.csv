@@ -1,0 +1,9 @@
+,total_test_time_secs
+count_vectorization,16.324547178999865
+tfidf_vectorization,16.987466555999845
+NB_split_climate_eu_bbc_1,1.534102920000123
+KNN_split_climate_eu_bbc_1,0.7931408590000046
+SVM_split_climate_eu_bbc_1,59.85952725600009
+SVC_ex.2.grid_split_climate_eu_bbc_1,5.358088673000111
+Logistic_Regression_split_climate_eu_bbc_1,1.226545476999945
+Random_Forest_split_climate_eu_bbc_1,10.052928606000023

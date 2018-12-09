@@ -1,0 +1,3 @@
+Model_Vec,class,f1_score,precision,recall,support,time_secs
+LSTM,    0,0.96,0.93,1.0,228,20.058793442000024
+LSTM,    1,0.96,1.0,0.92,233,20.058793442000024

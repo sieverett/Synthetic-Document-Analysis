@@ -1,0 +1,3 @@
+Model_Vec,class,f1_score,precision,recall,support,time_secs
+CNN,    0,1.0,1.0,1.0,547,22.7822396319998
+CNN,    1,1.0,1.0,1.0,509,22.7822396319998
