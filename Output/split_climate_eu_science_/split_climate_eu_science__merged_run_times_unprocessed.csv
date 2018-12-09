@@ -1,0 +1,8 @@
+,total_test_time_secs
+count_vectorization,24.597441170999446
+tfidf_vectorization,25.086689339999793
+NB_split_climate_eu_science_,0.47226649799995357
+KNN_split_climate_eu_science_,1.2432649249994938
+SVM_split_climate_eu_science_,136.00555458599956
+Logistic_Regression_split_climate_eu_science_,2.09936702899995
+Random_Forest_split_climate_eu_science_,9.294265692000408
