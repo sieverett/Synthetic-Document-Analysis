@@ -1,3 +1,4 @@
-# Synthetic-Document-Analysis---NLP-Techniques
+# Synthetic-Document-Analysis
+> Applied NLP-Techniques for Locating, Retrieving and Summarizing Documents
 
-Project repo for project @ UC Berkeley School of Information. @sieverett @davidlindsey
+A project @ UC Berkeley School of Information. @sieverett @davidlindsey
